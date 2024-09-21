@@ -1,20 +1,21 @@
-const number = Math.floor(Math.random() * 1000);
+const repeatString = function (stringInput,numInput) {
 
-const repeatString = function (word, num) {
-    if (num < 0) {
-        return "ERROR";
-    } else {
-    
-    let string = "";
-    for (i=0; i < num; i++) {
-        string += word;
-    }
-        return string;   
-    }
+let emptyField = '';
 
-}
-    
-repeatString('',number);
+  if (numInput < 0) {
+    return 'ERROR';
+  } else {
+  for (let i=0; i < numInput; i++) {
+    emptyField += stringInput;
+  };
+  
+};
+
+return emptyField;
+
+};
+
+// repeatString();
 
 // Do not edit below this line
 module.exports = repeatString;
